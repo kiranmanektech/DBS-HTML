@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand p-0" href="#"><img src="assets/images/logo.svg" alt=""></a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navRight">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="loginLink"><img src="assets/images/user-icon.svg" alt=""> Login</a>
+                        <a href="#" class="cartLink"><img src="assets/images/bag-icon.svg" alt=""> <span class="count">0</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="banner" class="homeBanner">
+        <div class="container">
+            <div class="row match-height">
+                <div class="col-xl-3 col-lg-4">
+                    <div class="card uploadCard">
+                        <div class="card-header">
+                            <h3>Upload Your Design</h3>
+                            <p>PNG, JPG, PDF and DOC <br />files are allowed</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="upload-input">
+                                <input id="file-upload" type="file" name="" class="form-control" id="">
+                                <img src="assets/images/upload-img.png" alt="">
+                                <div id="file-upload-filename"></div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8">
+                    <div class="card tabCard">
+                        <div class="card-header">
+                            <div class="search">
+                                <input type="search" class="form-control" placeholder="Search your content or design’s"
+                                    name="" id="">
+                            </div>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="presentation-tab" data-bs-toggle="tab"
+                                        data-bs-target="#presentation" type="button" role="tab"
+                                        aria-controls="presentation" aria-selected="true">
+                                        <div class="icon presentation-icon">presentation</div>
+                                        Presentation
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Social-Media-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Social-Media" type="button" role="tab"
+                                        aria-controls="Social-Media" aria-selected="false">
+                                        <div class="icon socialMedia-icon">Social Media</div>
+                                        Social Media
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Video-tab" data-bs-toggle="tab" data-bs-target="#Video"
+                                        type="button" role="tab" aria-controls="Video" aria-selected="false">
+                                        <div class="icon video-icon">Video</div>
+                                        Video
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Print-Products-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Print-Products" type="button" role="tab"
+                                        aria-controls="Print-Products" aria-selected="false">
+                                        <div class="icon printProducts-icon">Print Products</div>
+                                        Print Products
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Marketing-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Marketing" type="button" role="tab" aria-controls="Marketing"
+                                        aria-selected="false">
+                                        <div class="icon marketing-icon">Marketing</div>
+                                        Marketing
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Office-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Office" type="button" role="tab" aria-controls="Office"
+                                        aria-selected="false">
+                                        <div class="icon office-icon">Office</div>
+                                        Office
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Mockup-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Mockup" type="button" role="tab" aria-controls="Mockup"
+                                        aria-selected="false">
+                                        <div class="icon mockup-icon">Mockup</div>
+                                        Mockup
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content card-body" id="myTabContent">
+                            <div class="tab-pane fade show active" id="presentation" role="tabpanel"
+                                aria-labelledby="presentation-tab">
+                                <div class="swiper presentationSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Social-Media" role="tabpanel"
+                                aria-labelledby="Social-Media-tab">
+                                <div class="swiper socialMediaSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Video" role="tabpanel" aria-labelledby="Video-tab">
+                                <div class="swiper videoSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Print-Products" role="tabpanel"
+                                aria-labelledby="Print-Products-tab">
+
+                                <div class="swiper prontProductSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Marketing" role="tabpanel" aria-labelledby="Marketing-tab">
+                                <div class="swiper marketingSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Office" role="tabpanel" aria-labelledby="Office-tab">
+                                <div class="swiper officeSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Mockup" role="tabpanel" aria-labelledby="Mockup-tab">
+                                <div class="swiper mockupSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/poscard.png" alt="">
+                                            <h5>Poscard</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Poster.png" alt="">
+                                            <h5>Poster</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Flyer.png" alt="">
+                                            <h5>Flyer</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Certificate.png" alt="">
+                                            <h5>Certificate</h5>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/Birthday Card.png" alt="">
+                                            <h5>Birthday Card</h5>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-sm-end text-center">
+                            <a href="#" class="btn btn-warning">Proceed</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="howWeWork">
+        <div class="container">
+            <div class="sectionTitle text-center">
+                <h2 class="text-primary">How we work</h2>
+            </div>
+            <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                <li class="col-4" role="presentation">
+                    <div class="tabLink text-center mb-5 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
+                        <img src="assets/images/Create Free Account.svg" alt="">
+                        <h4 class="text-primary mt-3 mb-0">Create Free Account</h4>
+                    </div>
+                </li>
+                <li class="col-4" role="presentation">
+                    <div class="tabLink text-center mb-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                        <img src="assets/images/Search Your Design.svg" alt="">
+                        <h4 class="text-primary mt-3 mb-0">Search Your Design</h4>
+                    </div>
+                </li>
+                <li class="col-4" role="presentation">
+                    <div class="tabLink text-center mb-5" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                        <img src="assets/images/Download.svg" alt="">
+                        <h4 class="text-primary mt-3 mb-0">Download</h4>
+                    </div>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="homeInspired">
+        <div class="container">
+            <div class="row align-items-center homeInspiredRow">
+                <div class="col-lg-6">
+                    <div class="imgBlock">
+                        <img class="w-100" src="assets/images/Start-Inspired.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="sectionTitle mb-3 pb-2">
+                        <h2>Start Inspired</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row align-items-center homeInspiredRow mb-0">
+                <div class="col-lg-6 order-lg-1 order-0">
+                    <div class="imgBlock">
+                        <img class="w-100" src="assets/images/Templates.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0 order-1 ps-lg-5">
+                    <div class="sectionTitle mb-3 pb-2">
+                        <h2>Templates, Mockups</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="callToAction">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <h2 class="text-primary mb-lg-3 mb-4">It’s good to be on the list</h2>
+                    <h3 class="mb-lg-3 mb-4">Get 10% off your order when you signup for our email</h3>
+                    <form class="ctaForm needs-validation" novalidate>
+                        <input class="form-control me-2" type="email" placeholder="Enter You Email Address" aria-label="Enter You Email Address" required>
+                        <div class="invalid-feedback d-block">
+                            Please provide a valid zip.
+                        </div>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </form>
+                    <p>Yes, I’d like to receive special offer emails from Logo, as well as news about products, services
+                        and my design in progress. <span>Read <a href="#" class="text-primary fw-bold">Privacy</a> and
+                            <a href="#" class="text-primary fw-bold">Cookie Policy</a></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="companyInfo">
+                            <img src="assets/images/logo.svg" class="mb-4" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 rightInfo">
+                        <div class="row g-lg-5">
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Let Us Help</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">My Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shipping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact & Support</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">All Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Ideas & Advice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Reseller Program</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Our Company</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Investors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Media</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Sustainability</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Do not sell my info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Social Media</h5>
+                                    <ul class="nav flex-column socialNav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/LinkedIn.svg" alt="">
+                                                LinkedIn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Twitter.svg" alt="">
+                                                Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Facebook.svg" alt="">
+                                                Facebook</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0">Copyright © 2022 DesignStudio. All rights reserved. </p>
+                    <a href="#banner" class="backToTop"><img src="assets/images/up-arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/developer.js"></script>
+</body>
+
+</html>
