@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -32,8 +33,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="navRight">
                     <div class="d-flex align-items-center">
-                        <a href="#" class="loginLink"><img src="assets/images/user-icon.svg" alt=""> Login</a>
+                        <a href="#" class="loginLink" data-bs-toggle="modal" data-bs-target="#loginModal"><img src="assets/images/user-icon.svg" alt=""> Login</a>
                         <a href="#" class="cartLink"><img src="assets/images/bag-icon.svg" alt=""> <span class="count">0</span></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,7 +69,7 @@
     <section id="banner" class="homeBanner">
         <div class="container">
             <div class="row match-height">
-                <div class="col-xl-3 col-lg-4">
+                <div class="col-xl-3 col-lg-4 order-lg-0 order-1">
                     <div class="card uploadCard">
                         <div class="card-header">
                             <h3>Upload Your Design</h3>
@@ -89,70 +89,72 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-9 col-lg-8">
+                <div class="col-xl-9 col-lg-8 order-lg-1 order-0">
                     <div class="card tabCard">
                         <div class="card-header">
                             <div class="search">
                                 <input type="search" class="form-control" placeholder="Search your content or design’s"
                                     name="" id="">
                             </div>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="presentation-tab" data-bs-toggle="tab"
-                                        data-bs-target="#presentation" type="button" role="tab"
-                                        aria-controls="presentation" aria-selected="true">
-                                        <div class="icon presentation-icon">presentation</div>
-                                        Presentation
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Social-Media-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Social-Media" type="button" role="tab"
-                                        aria-controls="Social-Media" aria-selected="false">
-                                        <div class="icon socialMedia-icon">Social Media</div>
-                                        Social Media
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Video-tab" data-bs-toggle="tab" data-bs-target="#Video"
-                                        type="button" role="tab" aria-controls="Video" aria-selected="false">
-                                        <div class="icon video-icon">Video</div>
-                                        Video
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Print-Products-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Print-Products" type="button" role="tab"
-                                        aria-controls="Print-Products" aria-selected="false">
-                                        <div class="icon printProducts-icon">Print Products</div>
-                                        Print Products
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Marketing-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Marketing" type="button" role="tab" aria-controls="Marketing"
-                                        aria-selected="false">
-                                        <div class="icon marketing-icon">Marketing</div>
-                                        Marketing
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Office-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Office" type="button" role="tab" aria-controls="Office"
-                                        aria-selected="false">
-                                        <div class="icon office-icon">Office</div>
-                                        Office
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Mockup-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Mockup" type="button" role="tab" aria-controls="Mockup"
-                                        aria-selected="false">
-                                        <div class="icon mockup-icon">Mockup</div>
-                                        Mockup
-                                    </button>
-                                </li>
-                            </ul>
+                            <div class="nav-outer">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="presentation-tab" data-bs-toggle="tab"
+                                            data-bs-target="#presentation" type="button" role="tab"
+                                            aria-controls="presentation" aria-selected="true">
+                                            <div class="icon presentation-icon">presentation</div>
+                                            Presentation
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Social-Media-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Social-Media" type="button" role="tab"
+                                            aria-controls="Social-Media" aria-selected="false">
+                                            <div class="icon socialMedia-icon">Social Media</div>
+                                            Social Media
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Video-tab" data-bs-toggle="tab" data-bs-target="#Video"
+                                            type="button" role="tab" aria-controls="Video" aria-selected="false">
+                                            <div class="icon video-icon">Video</div>
+                                            Video
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Print-Products-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Print-Products" type="button" role="tab"
+                                            aria-controls="Print-Products" aria-selected="false">
+                                            <div class="icon printProducts-icon">Print Products</div>
+                                            Print Products
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Marketing-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Marketing" type="button" role="tab" aria-controls="Marketing"
+                                            aria-selected="false">
+                                            <div class="icon marketing-icon">Marketing</div>
+                                            Marketing
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Office-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Office" type="button" role="tab" aria-controls="Office"
+                                            aria-selected="false">
+                                            <div class="icon office-icon">Office</div>
+                                            Office
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Mockup-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Mockup" type="button" role="tab" aria-controls="Mockup"
+                                            aria-selected="false">
+                                            <div class="icon mockup-icon">Mockup</div>
+                                            Mockup
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="tab-content card-body" id="myTabContent">
                             <div class="tab-pane fade show active" id="presentation" role="tabpanel"
@@ -589,11 +591,155 @@
             </div>
         </div>
     </footer>
+  
+    <!-- Login Modal -->
+    <div class="modal fade rightModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h2 class="text-primary text-center mb-5 pb-2">Login</h2>
+                    <form action="">
+                        <div class="mb-4 pb-2">
+                            <label for="emailField" class="form-label">Email or Mobile Number</label>
+                            <input type="text" class="form-control" id="emailField">
+                        </div>
+                        <div class="mb-4 pb-2 position-relative passwordField">
+                            <label for="passwordField" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordField">
+                            <i class="icon icon-visibility-off" id="togglePassword"></i>
+                        </div>
+                        <div class="mb-4 pb-2 d-grid">
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#otpVerificationModal">Login</button>
+                        </div>
+                        <div class="mb-4 pb-2 text-end">
+                            <a href="#" class="forgot-link text-danger text-decoration-none">Forgot your password ?</a>
+                        </div>
+                        <div class="mb-4 pb-2 text-center">
+                            <p class="mb-0 orText">- or login with -</p>
+                        </div>
+                        <div class="mb-4 pb-2 row g-2">
+                            <div class="col">
+                                <div class="d-grid">
+                                    <a href="#" class="customBtn btn-gplus">Log in with Google</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-grid">
+                                    <a href="#" class="customBtn btn-fb">Log in with Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-light h5">Don’t have an account? <a href="#" class="fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#registerModal">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Verification Modal -->
+    <div class="modal fade rightModal" id="otpVerificationModal" tabindex="-1" aria-labelledby="otpVerificationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h2 class="text-primary text-center mb-4">OTP Verification</h2>
+                    <div class="text-center mb-5 pb-2">
+                        <p class="text-muted mb-4 pb-1">Enter the 4-digit code sent to you at <span class="fw-bold text-primary">+91 98989 00098</span></p>
+                        <a href="#" class="text-danger text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Edit Number</a>
+                    </div>
+                    <form action="">
+                        <div class="mb-4 pb-4 digit-group">
+                            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                            <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+                        </div>
+                        <div class="mb-4 pb-2 d-grid">
+                            <button class="btn btn-warning">Verify</button>
+                        </div>
+                        <div class="mb-4 pb-2 text-center">
+                            <p class="mb-4 pb-2 d-flex justify-content-center text-muted"><img src="assets/images/timer-icon.svg" alt="" class="me-1 mt-1"><span class="text-primary me-2">30:00</span> Seconds</p>
+                            <p class="text-muted">Didn't Receive Code? <a href="#" class="fw-bold text-danger">Resend Now</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal fade rightModal" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h2 class="text-primary text-center mb-5 pb-2">Signup</h2>
+                    <form action="">
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="emailField" class="form-label">Email</label>
+                            <input type="mail" class="form-control" id="emailField">
+                        </div>
+                        <div class="mb-4 pb-2 phone-control">
+                            <label for="phone" class="form-label">Mobile Number</label>
+                            <input id="phone" name="phone" class="form-control" type="tel">
+                        </div>
+                        <div class="mb-4 pb-2 position-relative passwordField">
+                            <label for="passwordField" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordField1">
+                            <i class="icon icon-visibility-off" id="togglePassword1"></i>
+                        </div>
+                        <div class="mb-4 pb-2 position-relative passwordField">
+                            <label for="passwordField" class="form-label">Confrim Password</label>
+                            <input type="password" class="form-control" id="passwordField2">
+                            <i class="icon icon-visibility-off" id="togglePassword2"></i>
+                        </div>
+                        <div class="mb-4 pb-2 d-grid">
+                            <button class="btn btn-warning">Next</button>
+                        </div>
+                        <div class="mb-4 pb-2 text-center">
+                            <p class="mb-0 orText">- or login with -</p>
+                        </div>
+                        <div class="mb-4 pb-2 row g-2">
+                            <div class="col">
+                                <div class="d-grid">
+                                    <a href="#" class="customBtn btn-gplus">Log in with Google</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-grid">
+                                    <a href="#" class="customBtn btn-fb">Log in with Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-light h5">Already have an account? <a href="#" class="fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/intlTelInput.min.js"></script>
     <script src="assets/js/developer.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+    </script>
 </body>
 
 </html>
