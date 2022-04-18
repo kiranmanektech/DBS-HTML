@@ -39,16 +39,16 @@ h3, .h3 {font-weight: 400;font-size: 1.5rem;line-height: 1;}
 h4, .h4 {font-weight: 600;font-size: 1.25rem;line-height: 1.4;}
 h5, .h5 {font-weight: 400;font-size: 1.125rem;line-height: 1.666;}
 
-.btn{font-weight: 600;font-size: 18px;line-height: 27px;text-align: center;border-radius: 10px;border: 1px solid;height: 70px;transition: all .5s;}
+.btn{font-weight: 600;font-size: 18px;line-height: 27px;text-align: center;border-radius: 10px;border: 1px solid;height: 54px;transition: all .5s;}
 
 .btn.btn-warning{background: var(--color-warning);border-color: var(--color-warning);color: var(--color-white);}
 .btn-warning:hover {color: var(--color-warning);background-color: var(--color-white);border-color: var(--color-warning);}
 
-.form-label{font-weight: 400;font-size: 16px;line-height: 1.25;color: #6F767D;margin-bottom: 8px;padding-left: 10px;}
-.form-control{background: var(--color-white);border: 1px solid #C6CDD5;box-shadow: 0px 10px 20px rgba(168, 190, 211, 0.1);border-radius: 10px;height: 60px;font-weight: 400;font-size: 18px;line-height: 1.111;color: var(--color-primary);padding: 0 20px;outline: none!important;}
+.form-label{font-weight: 400;font-size: 16px;line-height: 1.25;color: #6F767D;margin-bottom: 0;padding-left: 10px;}
+.form-control{background: var(--color-white);border: 1px solid #C6CDD5;box-shadow: 0px 10px 20px rgba(168, 190, 211, 0.1);border-radius: 10px;height: 52px;font-weight: 400;font-size: 18px;line-height: 1.111;color: var(--color-primary);padding: 0 20px;outline: none!important;}
 .form-control:focus{color: var(--color-primary);box-shadow: 0px 10px 20px rgba(168, 190, 211, 0.1);border-color: var(--color-warning);}
 select.form-control {background-image: url(../images/select-arrow.svg);background-repeat: no-repeat;background-position: calc(100% - 14px) center;}
-.passwordField .icon{cursor: pointer;width: 24px;height: 24px;display: block;position: absolute;right: 17px;top: 51px;background-repeat: no-repeat;background-position: center;}
+.passwordField .icon{cursor: pointer;width: 24px;height: 24px;display: block;position: absolute;right: 17px;top: 45px;background-repeat: no-repeat;background-position: center;}
 .passwordField .icon.icon-visibility-off{background-image: url(../images/visibility_off.svg);}
 .form-check .form-check-input{margin-top: 7px!important;}
 
@@ -189,7 +189,7 @@ footer .footerCopyright {background-color: var(--color-warning);padding: 20px 0;
 .rightModal .modal-body .btn-fb{background-image: url(../images/facebook-icon.svg);padding-left: 53px;border-color: #3B5998;color: #3B5998;}
 
 .digit-group{text-align: center;}
-.digit-group input {background: #FFFFFF;border: 1px solid #C6CDD5;box-sizing: border-box;box-shadow: 0px 10px 20px rgba(168, 190, 211, 0.1);border-radius: 10px;margin: 0 20px;font-weight: 400;font-size: 18px;line-height: 18px;color: var(--color-primary);width: 60px;height: 60px;text-align: center;}
+.digit-group input {background: #FFFFFF;border: 1px solid #C6CDD5;box-sizing: border-box;box-shadow: 0px 10px 20px rgba(168, 190, 211, 0.1);border-radius: 10px;margin: 0 20px;font-weight: 400;font-size: 18px;line-height: 18px;color: var(--color-primary);width: 50px;height: 50px;text-align: center;}
 .digit-group input:focus{outline: none;border-color: var(--color-warning);}
 
 .breadcrumbMain{padding: 50px 0 40px;}
