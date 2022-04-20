@@ -80,24 +80,100 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <aside class="col-lg-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Profile</a>
+                            <a class="nav-link profile-link active" href="profile.html">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My Orders</a>
+                            <a class="nav-link order-link" href="order.html">My Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Address Book</a>
+                            <a class="nav-link address-link" href="addresses.html">Address Book</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Change Password</a>
+                            <a class="nav-link password-link" href="change-password.html">Change Password</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
+                            <a class="nav-link logout-link" href="#">Logout</a>
                         </li>
                     </ul>                
+                </aside>
+                <div class="col-lg-9">
+                    <div class="card profile-card">
+                        <div class="card-header">
+                            <div class="card-img">
+                                <img src="assets/images/profile-img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Basic Information</h3>
+                            </div>
+                            <div class="card-form">
+                                <div class="mb-5">
+                                    <label for="nameField" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="nameField">
+                                </div>
+                                <div class="mb-5">
+                                    <label for="emailField" class="form-label">Email</label>
+                                    <input type="mail" class="form-control" id="emailField">
+                                </div>
+                                <div class="mb-5 phone-control">
+                                    <label for="phone" class="form-label">Mobile Number</label>
+                                    <input id="phone2" name="phone" class="form-control" type="tel">
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>Add Address</h3>
+                            </div>
+                            <div class="card-form mb-0">
+                                <div class="mb-5">
+                                    <label for="nameField" class="form-label">Flat, House no., Building, Company, Apartment</label>
+                                    <input type="text" class="form-control" id="nameField">
+                                </div>
+                                <div class="mb-5">
+                                    <label for="emailField" class="form-label">Address Line 1</label>
+                                    <input type="text" class="form-control" id="emailField">
+                                </div>
+                                <div class="mb-5">
+                                    <label for="nameField" class="form-label">Landmark</label>
+                                    <input type="text" class="form-control" id="nameField">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-5">
+                                        <label for="nameField" class="form-label">City, District, Town</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Option 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-5">
+                                        <label for="nameField" class="form-label">State</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Option 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-5">
+                                        <label for="nameField" class="form-label">Country</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Option 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-5">
+                                        <label for="nameField" class="form-label">Pincode</label>
+                                        <input type="text" class="form-control" id="nameField">
+                                    </div>
+                                    <div class="form-check d-flex justify-content-center mb-4 pb-1">
+                                        <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                                        <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#otpVerificationModal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -313,6 +389,12 @@
     <script src="assets/js/developer.js"></script>
     <script>
         var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+
+        var input = document.querySelector("#phone2");
         window.intlTelInput(input, {
             separateDialCode: true,
             utilsScript: "build/js/utils.js",
