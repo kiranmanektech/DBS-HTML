@@ -204,6 +204,26 @@ var swiper = new Swiper(".mockupSwiper", {
 });
 
 
+var swiper = new Swiper(".thumbSwiper", {
+    loop: false,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".largeproduct", {
+    loop: true,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+});
+
+
 /**
  * File Upload JS
  */

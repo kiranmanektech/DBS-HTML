@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand p-0" href="#"><img src="assets/images/logo.svg" alt=""></a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navRight">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="loginLink" data-bs-toggle="modal" data-bs-target="#loginModal"><img src="assets/images/user-icon.svg" alt=""> Login</a>
+                        <a href="#" class="cartLink"><img src="assets/images/bag-icon.svg" alt=""> <span class="count">0</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <section class="mainContent">
+       <div class="container">
+            <div class="breadcrumbMain">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#" data-bs-toggle="modal" data-bs-target="#addressModal">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Business Cards</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pe-lg-5 order-lg-0 order-1">
+                    <div class="card order-block">
+                        <div class="card-header">
+                            <h3 class="mb-0 fw-semibold text-gray">Standard Business Cards Order</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="body-inner">
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Categories</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Sub Categories</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Size</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Quantity</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Color</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailField" class="form-label">Paper</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Business Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-inner text-center">
+                                <div class="upload-outer mb-3">
+                                    <input class="form-control p-3" type="file" name="" id="">
+                                </div>
+                                <div class="d-flex row">
+                                    <div class="col-lg-6 pe-lg-2 mb-lg-0 mb-3">
+                                        <a href="#" class="btn btn-outline-warning w-100">Required Packages</a>
+                                    </div>
+                                    <div class="col-lg-6 ps-lg-2">
+                                        <a href="#" class="btn btn-warning w-100">Order Now</a>
+                                    </div>
+                                </div>
+                                <p class="text-danger mb-0">Your order will place within 3 to 4 business days**</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-lg-0 mb-4 order-lg-1 order-0">
+                    <div class="swiper largeproduct">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/business-card-large.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/business-card-large.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/business-card-large.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/business-card-large.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/thumb-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/thumb-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/thumb-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/thumb-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+    <section class="callToAction">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <h2 class="text-primary mb-lg-3 mb-4">It’s good to be on the list</h2>
+                    <h3 class="mb-lg-3 mb-4">Get 10% off your order when you signup for our email</h3>
+                    <form class="ctaForm needs-validation" novalidate>
+                        <input class="form-control me-2" type="email" placeholder="Enter You Email Address" aria-label="Enter You Email Address" required>
+                        <div class="invalid-feedback d-block">
+                            Please provide a valid zip.
+                        </div>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </form>
+                    <p>Yes, I’d like to receive special offer emails from Logo, as well as news about products, services
+                        and my design in progress. <span>Read <a href="#" class="text-primary fw-bold">Privacy</a> and
+                            <a href="#" class="text-primary fw-bold">Cookie Policy</a></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="companyInfo">
+                            <img src="assets/images/logo.svg" class="mb-4" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 rightInfo">
+                        <div class="row g-lg-5">
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Let Us Help</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">My Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shipping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact & Support</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">All Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Ideas & Advice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Reseller Program</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Our Company</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Investors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Media</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Sustainability</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Do not sell my info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Social Media</h5>
+                                    <ul class="nav flex-column socialNav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/LinkedIn.svg" alt="">
+                                                LinkedIn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Twitter.svg" alt="">
+                                                Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Facebook.svg" alt="">
+                                                Facebook</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0">Copyright © 2022 DesignStudio. All rights reserved. </p>
+                    <a href="#banner" class="backToTop"><img src="assets/images/up-arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- New Address Modal -->
+    <div class="modal fade rightModal" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h2 class="text-primary text-center mb-5 pb-2">New Address</h2>
+                    <form action="">
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Flat, House no., Building, Company, Apartment</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Landmark</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">City, District, Town</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">City, District, Town</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">State</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">Country</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">Pincode</label>
+                                    <input type="text" class="form-control" id="nameField">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 pb-2 phone-control">
+                            <label for="phone" class="form-label">Mobile Number</label>
+                            <input id="phone" name="phone" class="form-control" type="tel">
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-4 pb-1">
+                            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                            <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                          </div>
+                        <div class="mb-4 pb-2 d-grid">
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#otpVerificationModal">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="assets/js/developer.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+
+        var input = document.querySelector("#phone2");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+    </script>
+</body>
+
+</html>
