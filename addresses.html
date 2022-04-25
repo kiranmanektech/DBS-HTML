@@ -73,7 +73,7 @@
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">My Account</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        <li class="breadcrumb-item active" aria-current="page">My Orders</li>
                     </ol>
                 </nav>
             </div>
@@ -83,13 +83,13 @@
                 <aside class="col-lg-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link profile-link active" href="profile.html">Profile</a>
+                            <a class="nav-link profile-link" href="profile.html">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link order-link" href="order.html">My Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link address-link" href="addresses.html">Address Book</a>
+                            <a class="nav-link address-link active" href="addresses.html">Address Book</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link password-link" href="change-password.html">Change Password</a>
@@ -100,75 +100,67 @@
                     </ul>                
                 </aside>
                 <div class="col-lg-9">
-                    <div class="card profile-card">
-                        <div class="card-header">
-                            <div class="card-img">
-                                <img src="assets/images/profile-img.png" alt="">
-                            </div>
-                        </div>
+                    <div class="card profile-card address-card">
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Basic Information</h3>
+                                <h3>Manage Addresses</h3>
                             </div>
-                            <div class="card-form">
-                                <div class="mb-5">
-                                    <label for="nameField" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="nameField">
+                            <a href="#" class="btn btn-warning px-4 no-hover mb-5" data-bs-toggle="modal" data-bs-target="#addressModal"><img src="assets/images/add_circle.svg" alt=""> Add A New Address</a>
+                            <div class="address-block default">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h3 class="fw-semibold">Brown Walsh</h3>
+                                    <div class="default-badge">Default</div>
                                 </div>
-                                <div class="mb-5">
-                                    <label for="emailField" class="form-label">Email</label>
-                                    <input type="mail" class="form-control" id="emailField">
-                                </div>
-                                <div class="mb-5 phone-control">
-                                    <label for="phone" class="form-label">Mobile Number</label>
-                                    <input id="phone2" name="phone" class="form-control" type="tel">
+                                <p>S-201, Sharthak Apartment, Opp. Shriji Bakery, Nr. Pakwan Restaurant, S.H Highway, Ahmedabad, Gujarat 380015.</p>
+                                <p>98989 00098</p>
+                                <div class="border-top">
+                                    <div class="d-flex justify-content-between align-items-center pt-4">
+                                        <div class="form-check d-flex">
+                                            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1" checked>
+                                            <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                                        </div>
+                                        <div class="right-block">
+                                            <a href="#" class="edit-btn"><img src="assets/images/edit-icon.svg" alt=""></a>
+                                            <a href="#" class="delete-btn"><img src="assets/images/delete-icon.svg" alt=""></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-title">
-                                <h3>Add Address</h3>
+                            <div class="address-block">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h3 class="fw-semibold">Brown Walsh</h3>
+                                </div>
+                                <p>S-201, Sharthak Apartment, Opp. Shriji Bakery, Nr. Pakwan Restaurant, S.H Highway, Ahmedabad, Gujarat 380015.</p>
+                                <p>98989 00098</p>
+                                <div class="border-top">
+                                    <div class="d-flex justify-content-between align-items-center pt-4">
+                                        <div class="form-check d-flex">
+                                            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                                            <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                                        </div>
+                                        <div class="right-block">
+                                            <a href="#" class="edit-btn"><img src="assets/images/edit-icon.svg" alt=""></a>
+                                            <a href="#" class="delete-btn"><img src="assets/images/delete-icon.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-form mb-0">
-                                <div class="mb-5">
-                                    <label for="nameField" class="form-label">Flat, House no., Building, Company, Apartment</label>
-                                    <input type="text" class="form-control" id="nameField">
+                            <div class="address-block">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h3 class="fw-semibold">Brown Walsh</h3>
                                 </div>
-                                <div class="mb-5">
-                                    <label for="emailField" class="form-label">Address Line 1</label>
-                                    <input type="text" class="form-control" id="emailField">
-                                </div>
-                                <div class="mb-5">
-                                    <label for="nameField" class="form-label">Landmark</label>
-                                    <input type="text" class="form-control" id="nameField">
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 mb-5">
-                                        <label for="nameField" class="form-label">City, District, Town</label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Option 1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-5">
-                                        <label for="nameField" class="form-label">State</label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Option 1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-5">
-                                        <label for="nameField" class="form-label">Country</label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Option 1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-5">
-                                        <label for="nameField" class="form-label">Pincode</label>
-                                        <input type="text" class="form-control" id="nameField">
-                                    </div>
-                                    <div class="form-check d-flex justify-content-center mb-4 pb-1">
-                                        <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
-                                        <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#otpVerificationModal">Save</button>
+                                <p>S-201, Sharthak Apartment, Opp. Shriji Bakery, Nr. Pakwan Restaurant, S.H Highway, Ahmedabad, Gujarat 380015.</p>
+                                <p>98989 00098</p>
+                                <div class="border-top">
+                                    <div class="d-flex justify-content-between align-items-center pt-4">
+                                        <div class="form-check d-flex">
+                                            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                                            <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                                        </div>
+                                        <div class="right-block">
+                                            <a href="#" class="edit-btn"><img src="assets/images/edit-icon.svg" alt=""></a>
+                                            <a href="#" class="delete-btn"><img src="assets/images/delete-icon.svg" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -298,6 +290,88 @@
             </div>
         </div>
     </footer>
+
+    <!-- New Address Modal -->
+    <div class="modal fade rightModal" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h2 class="text-primary text-center mb-5 pb-2">New Address</h2>
+                    <form action="">
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Flat, House no., Building, Company, Apartment</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">Landmark</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="mb-4 pb-2">
+                            <label for="nameField" class="form-label">City, District, Town</label>
+                            <input type="text" class="form-control" id="nameField">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">City, District, Town</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">State</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">Country</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Value1</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-2">
+                                    <label for="nameField" class="form-label">Pincode</label>
+                                    <input type="text" class="form-control" id="nameField">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 pb-2 phone-control">
+                            <label for="phone" class="form-label">Mobile Number</label>
+                            <input id="phone" name="phone" class="form-control" type="tel">
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-4 pb-1">
+                            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                            <label class="form-check-label text-muted" for="exampleCheck1">Make this my default address</label>
+                          </div>
+                        <div class="mb-4 pb-2 d-grid">
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#otpVerificationModal">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

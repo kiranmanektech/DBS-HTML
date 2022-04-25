@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand p-0" href="#"><img src="assets/images/logo.svg" alt=""></a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navRight">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="loginLink" data-bs-toggle="modal" data-bs-target="#loginModal"><img src="assets/images/user-icon.svg" alt=""> Login</a>
+                        <a href="#" class="cartLink"><img src="assets/images/bag-icon.svg" alt=""> <span class="count">0</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <section class="mainContent">
+       <div class="container">
+            <div class="breadcrumbMain">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">My Orders</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <aside class="col-lg-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link profile-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link order-link active" href="order.html">My Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link address-link" href="addresses.html">Address Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link password-link" href="change-password.html">Change Password</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link logout-link" href="#">Logout</a>
+                        </li>
+                    </ul>                
+                </aside>
+                <div class="col-lg-9">
+                    <div class="card profile-card order-card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Recent Orders</h3>
+                            </div>
+                            <div class="order-details mb-5">
+                                <div class="d-flex border-bottom px-2 mb-4">
+                                    <p class="me-5 fw-medium text-gray">Sat, 1st April 2022 04:18 Pm</p>
+                                    <p class="fw-medium text-gray">Order Number: 5245254125485985</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex align-items-start">
+                                            <div class="product-img bg-lightBlue p-2">
+                                                <img src="assets/images/order-img.png" alt="">
+                                            </div>
+                                            <div class="product-detail ps-2">
+                                                <h4 class="text-primary fw-medium mb-0">Multi Color Business Cards</h4>
+                                                <p class="text-primary mb-2">(4 Color CMYK)</p>
+                                                <div class="table table-borderless product-detail-table">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Products No</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">S_BC#10_IDP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quantity</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">1000 Cards</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>No. Of Sides</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">2 Sides</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lamination</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">Glossy - Additional</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end">
+                                        <div class="d-flex flex-column align-items-end">
+                                            <div class="price">₹ 650.00</div>
+                                            <a href="#" class="btn btn-warning invoice-btn">Download Invoice</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between mt-4 pt-2">
+                                    <div class="col-lg-6 pe-5">
+                                        <div class="title text-primary border-bottom pb-2 mb-2">Price Details</div>
+                                        <div class="table table-borderless product-detail-table">
+                                            <table class="w-100">
+                                                <tr>
+                                                    <td>Price ( 1000 Qty)</td>
+                                                    <td class="hyphen">:</td>
+                                                    <td class="text-primary">₹ 650.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Discount</td>
+                                                    <td class="hyphen">:</td>
+                                                    <td class="text-primary">₹ 0.00s</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pb-2">Shipping + Packaging Fee</td>
+                                                    <td class="hyphen pb-2">:</td>
+                                                    <td class="text-primary pb-2">₹ 0.00</td>
+                                                </tr>
+                                                <tfoot class="border-top">
+                                                    <tr>
+                                                        <td class="pt-2">Total</td>
+                                                        <td class="pt-2" class="hyphen">:</td>
+                                                        <td class="pt-2" class="text-primary">₹ 650.00</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ps-5">
+                                        <div class="title text-primary border-bottom pb-2 mb-2">Shipping Address</div>
+                                        <div class="address">
+                                            <h5 class="text-primary fw-bold">Brown Walsh</h5>
+                                            <p class="mb-1 text-muted">S-201, Sharthak Apartment, <br/>Opp. Shriji Bakery, Nr. Pakwan Restaurant, S.H Highway, Ahmedabad, Gujarat 380015.</p>
+                                            <p class="mb-0 text-muted">98989 00098</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="title text-primary border-bottom pb-2 mb-3">Shipping Summary</div>
+                                        <div class="d-flex align-items-center justify-content-between progress-labels">
+                                            <h6 class="mb-0 text-gray">Ordered</h6>
+                                            <h6 class="text-center mb-0 text-gray">Ordered</h6>
+                                            <h6 class="text-end mb-0 text-gray">Ordered</h6>
+                                        </div>
+                                        <div class="progress my-1">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between progress-labels mb-4 pb-2">
+                                            <h6 class="fw-medium text-gray">Sun, 2nd Apr</h6>
+                                            <h6 class="text-center fw-medium text-gray">Tue, 4th Apr</h6>
+                                            <h6 class="text-end fw-medium text-gray">Wed, 5th Apr</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <a href="#" class="btn btn-info help-btn"><img src="assets/images/help-icon.svg" alt=""> Need Help?</a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>Past Orders</h3>
+                            </div>
+                            <div class="order-details mb-3">
+                                <h4 class="fw-bold text-warning ps-2 h3">Delivered</h4>
+                                <div class="d-flex border-bottom px-2 mb-4">
+                                    <p class="me-5 fw-medium text-gray">Sat, 1st April 2022 04:18 Pm</p>
+                                    <p class="fw-medium text-gray">Order Number: 5245254125485985</p>
+                                    <a href="#" class="text-lightPrimary ms-auto fw-medium">Repeat Order</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex align-items-start">
+                                            <div class="product-img bg-lightBlue p-2">
+                                                <img src="assets/images/order-img.png" alt="">
+                                            </div>
+                                            <div class="product-detail ps-2">
+                                                <h4 class="text-primary fw-medium mb-0">Multi Color Business Cards</h4>
+                                                <p class="text-primary mb-2">(4 Color CMYK)</p>
+                                                <div class="table table-borderless product-detail-table">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Products No</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">S_BC#10_IDP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quantity</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">1000 Cards</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>No. Of Sides</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">2 Sides</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lamination</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">Glossy - Additional</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end">
+                                        <div class="d-flex flex-column align-items-end">
+                                            <div class="price">₹ 650.00</div>
+                                            <a href="#" class="btn btn-warning invoice-btn">Download Invoice</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-details">
+                                <h4 class="fw-bold text-warning ps-2 h3">Delivered</h4>
+                                <div class="d-flex border-bottom px-2 mb-4">
+                                    <p class="me-5 fw-medium text-gray">Sat, 1st April 2022 04:18 Pm</p>
+                                    <p class="fw-medium text-gray">Order Number: 5245254125485985</p>
+                                    <a href="#" class="text-lightPrimary ms-auto fw-medium">Repeat Order</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex align-items-start">
+                                            <div class="product-img bg-lightBlue p-2">
+                                                <img src="assets/images/order-img.png" alt="">
+                                            </div>
+                                            <div class="product-detail ps-2">
+                                                <h4 class="text-primary fw-medium mb-0">Multi Color Business Cards</h4>
+                                                <p class="text-primary mb-2">(4 Color CMYK)</p>
+                                                <div class="table table-borderless product-detail-table">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Products No</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">S_BC#10_IDP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quantity</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">1000 Cards</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>No. Of Sides</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">2 Sides</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lamination</td>
+                                                            <td class="hyphen">:</td>
+                                                            <td class="text-primary">Glossy - Additional</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end">
+                                        <div class="d-flex flex-column align-items-end">
+                                            <div class="price">₹ 650.00</div>
+                                            <a href="#" class="btn btn-warning invoice-btn">Download Invoice</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+    <section class="callToAction">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <h2 class="text-primary mb-lg-3 mb-4">It’s good to be on the list</h2>
+                    <h3 class="mb-lg-3 mb-4">Get 10% off your order when you signup for our email</h3>
+                    <form class="ctaForm needs-validation" novalidate>
+                        <input class="form-control me-2" type="email" placeholder="Enter You Email Address" aria-label="Enter You Email Address" required>
+                        <div class="invalid-feedback d-block">
+                            Please provide a valid zip.
+                        </div>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </form>
+                    <p>Yes, I’d like to receive special offer emails from Logo, as well as news about products, services
+                        and my design in progress. <span>Read <a href="#" class="text-primary fw-bold">Privacy</a> and
+                            <a href="#" class="text-primary fw-bold">Cookie Policy</a></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="companyInfo">
+                            <img src="assets/images/logo.svg" class="mb-4" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 rightInfo">
+                        <div class="row g-lg-5">
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Let Us Help</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">My Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shipping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact & Support</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">All Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Ideas & Advice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Reseller Program</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Our Company</h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Investors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">For Media</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Sustainability</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Do not sell my info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footerNav">
+                                    <h5 class="title">Social Media</h5>
+                                    <ul class="nav flex-column socialNav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/LinkedIn.svg" alt="">
+                                                LinkedIn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Twitter.svg" alt="">
+                                                Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><img src="assets/images/Facebook.svg" alt="">
+                                                Facebook</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0">Copyright © 2022 DesignStudio. All rights reserved. </p>
+                    <a href="#banner" class="backToTop"><img src="assets/images/up-arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="assets/js/developer.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+
+        var input = document.querySelector("#phone2");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+        });
+    </script>
+</body>
+
+</html>
