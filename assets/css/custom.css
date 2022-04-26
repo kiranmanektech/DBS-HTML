@@ -79,6 +79,9 @@ select.form-control {background-image: url(../images/select-arrow.svg);backgroun
 
 .form-check-input:checked{background-color: var(--color-warning);border-color: var(--color-warning);}
 
+.valid-feedback,
+.invalid-feedback {line-height: 1;font-size: 12px;margin-top: 7px;}
+
 /* Header CSS */
 header {background: linear-gradient(180deg, #FFFFFF 0%, #F0F7FE 100%);}
 header .navbar {padding: 25px 0;}
